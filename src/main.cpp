@@ -44,13 +44,13 @@ ZERO_TRACKER_NO_ODOM,
 //You will input whatever motor names you chose when you configured your robot using the sidebar configurer, they don't have to be "Motor1" and "Motor2".
 
 //Left Motors:
-motor_group(),
+motor_group(Motor11),
 
 //Right Motors:
-motor_group(),
+motor_group(Motor12),
 
 //Specify the PORT NUMBER of your inertial sensor, in PORT format (i.e. "PORT1", not simply "1"):
-PORT1,
+PORT16,
 
 //Input your wheel diameter. (4" omnis are actually closer to 4.125"):
 3.25,
