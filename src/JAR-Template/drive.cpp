@@ -720,6 +720,8 @@ void Drive::control_tank(){
   float rightthrottle = deadband(controller(primary).Axis2.value(), 5);
   DriveL.spin(fwd, to_volt(leftthrottle), volt);
   DriveR.spin(fwd, to_volt(rightthrottle), volt);
+  DriveL.setStopping(coast);
+  DriveR.setStopping(coast);
 }
 
 /**
