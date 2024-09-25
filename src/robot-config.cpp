@@ -34,9 +34,11 @@ int rc_auto_loop_function_Controller1() {
     if(RemoteControlCodeEnabled) {
       // check the ButtonX/ButtonB status to control Motor18
       if (Controller1.ButtonX.pressing()) {
+        Motor18.setVelocity(600, rpm);
         Motor18.spin(reverse);
         Controller1XBButtonsControlMotorsStopped = false;
       } else if (Controller1.ButtonB.pressing()) {
+        Motor18.setVelocity(600, rpm);
         Motor18.spin(forward);
         Controller1XBButtonsControlMotorsStopped = false;
       } else if (!Controller1XBButtonsControlMotorsStopped) {
